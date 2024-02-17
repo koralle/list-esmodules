@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "list-esmodules",
+  "version": "1.0.0",
+  "description": "",
+  "respository": {
+    "type": "git",
+    "url": "git+https//github.com/koralle/list-esmodules"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "koralle <mkhd7930@gmail.com>",
+  "license": "MIT"
+}
