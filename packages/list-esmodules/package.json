@@ -1,11 +1,44 @@
 {
+  "type": "module",
   "name": "@koralle/list-esmodules",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "typecheck": "tsc --noEmit"
+  },
   "keywords": [],
   "author": "koralle <mkhd7930@gmail.com>",
   "license": "MIT",
+  "main": "dist/index.cjs",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koralle/list-esmodules",
+    "directory": "packages/list-esmodules"
+  },
+  "bugs": {
+    "url": "https://github.com/koralle/list-esmodules/issues"
+  },
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.cjs"
+    }
+  },
   "devDependencies": {
     "tsup": "^8.0.2"
   },
