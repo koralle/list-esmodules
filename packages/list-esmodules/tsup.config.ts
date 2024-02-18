@@ -2,6 +2,7 @@ import { match } from "ts-pattern";
 import { defineConfig } from "tsup";
 
 export default defineConfig({
+  target: "es2022",
   entryPoints: ["src/index.ts"],
   dts: true,
   format: ["esm", "cjs"],
