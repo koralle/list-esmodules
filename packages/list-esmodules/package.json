@@ -10,6 +10,7 @@
     "tsup": "^8.0.2"
   },
   "dependencies": {
+    "execa": "^8.0.1",
     "ts-pattern": "^5.0.8"
   }
 }
